@@ -24,6 +24,7 @@
         .tile__box {
             border: 1px solid grey;
             padding: 20px;
+            color: grey;
 
             &--header {
               display: flex;
@@ -39,6 +40,7 @@
 
               img {
                 height: 25px;
+                opacity: 0.4;
               }
             }
         }
