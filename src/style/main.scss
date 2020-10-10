@@ -1,8 +1,10 @@
 /* Helpers */
 @import './helpers/variables';
+@import './helpers/placeholders';
 
 /* Layout */
 @import './layout/Notification.scss';
+@import './layout/HeroShot.scss';
 
 /* Base */
 @import './base/reset';
