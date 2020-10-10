@@ -1,0 +1,26 @@
+.button {
+    &__primary--blue {
+        background-color: $color-blue;
+        border: none;
+        color: white;
+        font-size: 12px;
+    }
+
+    &__primary--orange {
+        background-color: $color-orange;
+        color: white;
+        border: none;
+        font-size: 12px;
+    }
+
+    &__transparent--blue {
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $color-dark-blue;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+*, body, html{
+  font-family: 'Open Sans', sans-serif !important;
+  box-sizing: border-box !important;
+  outline: 0;
+  margin: 0;
+}
+
+body, html{
+  min-height: 100vh !important;
+}
+
+button{
+  cursor: pointer;
+  border-radius: 3px;  
+  &:focus {
+    outline: none;
+  }
+}
