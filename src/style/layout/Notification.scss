@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
     padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $color-smoke-grey;
+
     &__content {
         display: flex;
         flex-direction: row;
@@ -13,8 +18,14 @@
             padding-right: 30px;
         }
 
+        a {
+            text-decoration: none;
+            color: #0a0abb;
+        }
+
         button {
-          width: 59px;
+          width: 60px;
+          min-width: 60px;
           padding: 8px;
         }
     }
