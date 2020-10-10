@@ -1,0 +1,50 @@
+.newsletter {
+    background-color: $color-blue;
+    padding: 35px;
+    color: white;
+    opacity: 0.9;
+    max-width: 640px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    p {
+        padding: 10px 0px;
+    }
+
+    &__close-button {
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+
+        input, button {
+            height: 30px;
+        }
+
+        input {
+            flex: 1;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 15px;
+            border: none;
+        }
+
+        button {
+            margin-left: 10px;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
