@@ -10,6 +10,7 @@ function HeroShot() {
                 <h1>Consult, Design, and Develop Websites</h1>
                 <p className="heroshot__content--info">Have something great in mind? Feel free to contact me. <br/>
                 I'll help you to make it happen.</p>
+                <button className="button__transparent--blue"><h5>LET'S MAKE CONTACT</h5></button>
             </div>
         </div>
     )
