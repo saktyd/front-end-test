@@ -2,9 +2,6 @@
     display: flex;
     justify-content: center;
     padding: 15px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
     background-color: $color-smoke-grey;
 
     &__content {
@@ -30,3 +27,11 @@
         }
     }
 }
+
+.sticky-notification {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+

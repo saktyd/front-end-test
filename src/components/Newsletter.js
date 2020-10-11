@@ -1,15 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { CSSTransition } from 'react-transition-group'
 
-function Newsletter() {
-    const [isShowNewsletter, setShowNewsletter] = useState(true)
+function Newsletter({ showNewsletter }) {
+    const [isShowNewsletter, setShowNewsletter] = useState(false)
 
     const newsletterToggle = () => {
         setShowNewsletter(!isShowNewsletter)
     }
 
+    useEffect(() => {
+        if (showNewsletter) {
+            setShowNewsletter(showNewsletter)
+        }
+    }, [showNewsletter])
+
     return (
         <div>
-            { isShowNewsletter && ( 
+            <CSSTransition timeout={500} in={isShowNewsletter} classNames="animation__newsletter" unmountOnExit>
                 <div className="newsletter">
                     <button className="newsletter__close-button" onClick={newsletterToggle}>×</button>
                     <h2>Get latest updates in web technologies</h2>
@@ -21,7 +28,7 @@ function Newsletter() {
                         <button className="button__primary--orange">Count me in!</button>
                     </div>
                 </div>
-             ) }
+            </CSSTransition>
         </div>
     )
 }

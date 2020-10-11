@@ -1,0 +1,39 @@
+.animation {
+    // Newsletter
+    &__newsletter-enter {
+        height: 0px;
+    }
+
+    &__newsletter-enter-active {
+        height: 192px;
+        transition: height 1s ease;
+    }
+
+    &__newsletter-exit {
+        height: 192px;
+    }
+
+    &__newsletter-exit-active {
+        height: 0px;
+        transition: height 1s ease;
+    }   
+
+    // Notification
+    &__notification-enter {
+        height: 0px;
+    }
+
+    &__notification-enter-active {
+        height: 60px;
+        transition: height 1s ease;
+    }
+
+    &__notification-exit {
+        height: 60px;
+    }
+
+    &__notification-exit-active {
+        height: 0px;
+        transition: height 1s ease;
+    }
+}
