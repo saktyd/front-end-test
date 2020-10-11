@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style/main.scss';
 import Notification from './components/Notification'
-import HeroShot from './components/HeroShot'
+import Header from './components/Header'
 import HightLight from './components/Highlight'
 import Footer from './components/Footer'
 import Newsletter from './components/Newsletter'
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App" onScroll={handleScroll}>
       <Notification/>
-      <HeroShot/>
+      <Header/>
       <HightLight/>
       <Footer/>
       <Newsletter showNewsletter={showNewsletter} />

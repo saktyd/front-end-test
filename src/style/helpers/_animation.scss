@@ -5,12 +5,12 @@
     }
 
     &__newsletter-enter-active {
-        height: 192px;
+        height: 222px;
         transition: height 1s ease;
     }
 
     &__newsletter-exit {
-        height: 192px;
+        height: 222px;
     }
 
     &__newsletter-exit-active {
@@ -24,12 +24,12 @@
     }
 
     &__notification-enter-active {
-        height: 60px;
+        height: 64px;
         transition: height 1s ease;
     }
 
     &__notification-exit {
-        height: 60px;
+        height: 64px;
     }
 
     &__notification-exit-active {

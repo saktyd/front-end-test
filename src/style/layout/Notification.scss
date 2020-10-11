@@ -1,7 +1,8 @@
 .notification {
     display: flex;
     justify-content: center;
-    padding: 15px;
+    line-height: 1.5;
+    padding: 14px 11px;
     background-color: $color-smoke-grey;
 
     &__content {
@@ -11,8 +12,13 @@
         max-width: 720px;
         font-size: 12px;
 
+        @media all and (max-width: 425px) {
+            flex-direction: column; 
+            align-items: flex-start;  
+        }
+
         span {
-            padding-right: 30px;
+            padding-right: 20px;
         }
 
         a {
@@ -25,6 +31,12 @@
           min-width: 60px;
           padding: 8px;
         }
+
+        @media all and (max-width: 425px) {
+            button {
+                margin-top: 10px;
+            }
+        }
     }
 }
 
@@ -32,6 +44,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 

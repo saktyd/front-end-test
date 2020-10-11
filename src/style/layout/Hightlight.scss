@@ -1,21 +1,21 @@
 .highlight {
     @extend %container;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 100px;
     background-color: $color-smoke-grey;
 
     &__header {
         text-align: center;
         max-width: 700px;
-        padding-bottom: 50px;
+        padding-bottom: 53px;
         margin: 0 auto;
-        color:  #686868;
+        line-height: 1.5;
         header {
-            font-size: 36px;
-            margin-bottom: 20px;
+            font-size: 30px;
+            margin-bottom: 8px;
         }
         p {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 
@@ -23,11 +23,17 @@
         display: grid;
         grid-gap: 35px;
         grid-template-columns: auto auto auto;
+        @media all and (max-width: 480px) {
+          grid-template-columns: auto !important;
+        }
+        @media all and (max-width: 960px) {
+          grid-template-columns: auto auto;
+        }
 
         .tile__box {
             border: 1px solid grey;
-            padding: 20px;
-            color: #686868;
+            padding: 20px 17px 30px 20px;
+            box-shadow: inset 1px 1px 0px 1px white, 1px 1px 0px 1px white;
 
             &--header {
               display: flex;
@@ -37,14 +43,17 @@
               padding-bottom: 15px;
 
               span {
-                font-size: 20px;
-                font-weight: bold;
+                font-size: 23px;
               }
 
               img {
-                height: 25px;
-                opacity: 0.4;
+                height: 43px;
+                opacity: 0.3;
               }
+            }
+
+            &--discription {
+              font-size: 14px;
             }
         }
     }
