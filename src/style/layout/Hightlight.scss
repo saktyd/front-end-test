@@ -22,12 +22,12 @@
     &__tiles {
         display: grid;
         grid-gap: 35px;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         @media all and (max-width: 480px) {
-          grid-template-columns: auto !important;
+          grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
         }
         @media all and (max-width: 960px) {
-          grid-template-columns: auto auto;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
         .tile__box {
