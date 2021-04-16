@@ -4,5 +4,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can access on : 
 
-### `https://sakti-cermati-frontend-test.netlify.app`
+### `https://demo-sakti-profile.netlify.app`
 
